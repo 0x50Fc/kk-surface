@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1AFD6CCF2112BC440038234E /* KKSurface.framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1AFD6CD02112BC440038234E /* Build configuration list for PBXAggregateTarget "KKSurface.framework" */;
+			buildPhases = (
+				1AFD6CD52112BC540038234E /* ShellScript */,
+			);
+			dependencies = (
+				1AFD6CD42112BC530038234E /* PBXTargetDependency */,
+			);
+			name = KKSurface.framework;
+			productName = KKSurface.framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1AFD6C7E2112B6C80038234E /* KKSurface.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6C7C2112B6C80038234E /* KKSurface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6C962112BA0B0038234E /* kk-ev.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6C892112BA080038234E /* kk-ev.cc */; };
+		1AFD6C972112BA0B0038234E /* kk-crypto.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6C8A2112BA080038234E /* kk-crypto.cc */; };
+		1AFD6C982112BA0B0038234E /* kk-wk.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6C8B2112BA080038234E /* kk-wk.cc */; };
+		1AFD6C992112BA0B0038234E /* kk-script.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6C8C2112BA080038234E /* kk-script.cc */; };
+		1AFD6C9A2112BA0B0038234E /* kk-http.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6C8D2112BA080038234E /* kk-http.cc */; };
+		1AFD6C9B2112BA0B0038234E /* kk-atomic-pthread.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6C8E2112BA090038234E /* kk-atomic-pthread.cc */; };
+		1AFD6C9C2112BA0B0038234E /* kk-ws.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6C8F2112BA090038234E /* kk-ws.cc */; };
+		1AFD6C9D2112BA0B0038234E /* kk-chan.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6C902112BA090038234E /* kk-chan.cc */; };
+		1AFD6C9E2112BA0B0038234E /* kk-dispatch.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6C912112BA090038234E /* kk-dispatch.cc */; };
+		1AFD6C9F2112BA0B0038234E /* kk-object.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6C922112BA090038234E /* kk-object.cc */; };
+		1AFD6CA02112BA0B0038234E /* kk-block.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6C932112BA090038234E /* kk-block.cc */; };
+		1AFD6CA12112BA0B0038234E /* kk-binary.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6C942112BA0A0038234E /* kk-binary.cc */; };
+		1AFD6CA22112BA0B0038234E /* kk-string.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6C952112BA0B0038234E /* kk-string.cc */; };
+		1AFD6CB02112BA180038234E /* kk-wk.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CA32112BA170038234E /* kk-wk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CB12112BA180038234E /* kk-dispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CA42112BA170038234E /* kk-dispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CB22112BA180038234E /* kk-ev.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CA52112BA170038234E /* kk-ev.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CB32112BA180038234E /* kk-crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CA62112BA170038234E /* kk-crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CB42112BA180038234E /* kk-chan.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CA72112BA170038234E /* kk-chan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CB52112BA180038234E /* kk-script.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CA82112BA170038234E /* kk-script.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CB62112BA180038234E /* kk-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CA92112BA170038234E /* kk-config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CB72112BA180038234E /* kk-ws.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CAA2112BA170038234E /* kk-ws.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CB82112BA180038234E /* kk-http.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CAB2112BA170038234E /* kk-http.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CB92112BA180038234E /* kk-block.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CAC2112BA180038234E /* kk-block.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CBA2112BA180038234E /* kk-string.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CAD2112BA180038234E /* kk-string.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CBB2112BA180038234E /* kk-object.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CAE2112BA180038234E /* kk-object.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CBC2112BA180038234E /* kk-binary.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CAF2112BA180038234E /* kk-binary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CF02112C3190038234E /* KKSurfaceElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CEE2112C3190038234E /* KKSurfaceElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CF12112C3190038234E /* KKSurfaceElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6CEF2112C3190038234E /* KKSurfaceElement.mm */; };
+		1AFD6CF42112C9190038234E /* KKSurfaceContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6CF22112C9190038234E /* KKSurfaceContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6CF52112C9190038234E /* KKSurfaceContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6CF32112C9190038234E /* KKSurfaceContext.mm */; };
+		1AFD6D032112DE570038234E /* KKSurfaceCGContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6D012112DE570038234E /* KKSurfaceCGContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6D042112DE570038234E /* KKSurfaceCGContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6D022112DE570038234E /* KKSurfaceCGContext.m */; };
+		1AFD6D072112E0B30038234E /* KKSurfaceGLContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6D052112E0B20038234E /* KKSurfaceGLContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6D082112E0B30038234E /* KKSurfaceGLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6D062112E0B30038234E /* KKSurfaceGLContext.m */; };
+		1AFD6D0B2112E2810038234E /* KKSurfaceCanvasElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6D092112E2810038234E /* KKSurfaceCanvasElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6D0C2112E2810038234E /* KKSurfaceCanvasElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6D0A2112E2810038234E /* KKSurfaceCanvasElement.mm */; };
+		1AFD6D102112E6670038234E /* require_js.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6D0E2112E6670038234E /* require_js.h */; };
+		1AFD6D152112EF720038234E /* KKSurfaceGLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFD6D132112EF720038234E /* KKSurfaceGLElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AFD6D162112EF720038234E /* KKSurfaceGLElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD6D142112EF720038234E /* KKSurfaceGLElement.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AFD6CC22112BA3E0038234E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AFD6CBD2112BA3E0038234E /* KKDuktape.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1AFD6BFD2112A8660038234E;
+			remoteInfo = KKDuktape;
+		};
+		1AFD6CC92112BA470038234E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AFD6CC42112BA470038234E /* KKEvent.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1AFD6C1F2112AA0F0038234E;
+			remoteInfo = KKEvent;
+		};
+		1AFD6CCB2112BA770038234E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AFD6CC42112BA470038234E /* KKEvent.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AFD6C1E2112AA0F0038234E;
+			remoteInfo = KKEvent;
+		};
+		1AFD6CCD2112BA770038234E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AFD6CBD2112BA3E0038234E /* KKDuktape.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AFD6BFC2112A8660038234E;
+			remoteInfo = KKDuktape;
+		};
+		1AFD6CD32112BC530038234E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AFD6C702112B6C80038234E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AFD6C782112B6C80038234E;
+			remoteInfo = KKSurface;
+		};
+		1AFD6CEA2112C24F0038234E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AFD6CE32112C24F0038234E /* KKView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1ACF730C1FF0DC3B003FB42A;
+			remoteInfo = KKView;
+		};
+		1AFD6CEC2112C2570038234E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AFD6CE32112C24F0038234E /* KKView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ACF730B1FF0DC3B003FB42A;
+			remoteInfo = KKView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AFD6C792112B6C80038234E /* KKSurface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKSurface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AFD6C7C2112B6C80038234E /* KKSurface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSurface.h; sourceTree = "<group>"; };
+		1AFD6C7D2112B6C80038234E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AFD6C892112BA080038234E /* kk-ev.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "kk-ev.cc"; sourceTree = "<group>"; };
+		1AFD6C8A2112BA080038234E /* kk-crypto.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "kk-crypto.cc"; sourceTree = "<group>"; };
+		1AFD6C8B2112BA080038234E /* kk-wk.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "kk-wk.cc"; sourceTree = "<group>"; };
+		1AFD6C8C2112BA080038234E /* kk-script.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "kk-script.cc"; sourceTree = "<group>"; };
+		1AFD6C8D2112BA080038234E /* kk-http.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "kk-http.cc"; sourceTree = "<group>"; };
+		1AFD6C8E2112BA090038234E /* kk-atomic-pthread.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "kk-atomic-pthread.cc"; sourceTree = "<group>"; };
+		1AFD6C8F2112BA090038234E /* kk-ws.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "kk-ws.cc"; sourceTree = "<group>"; };
+		1AFD6C902112BA090038234E /* kk-chan.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "kk-chan.cc"; sourceTree = "<group>"; };
+		1AFD6C912112BA090038234E /* kk-dispatch.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "kk-dispatch.cc"; sourceTree = "<group>"; };
+		1AFD6C922112BA090038234E /* kk-object.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "kk-object.cc"; sourceTree = "<group>"; };
+		1AFD6C932112BA090038234E /* kk-block.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "kk-block.cc"; sourceTree = "<group>"; };
+		1AFD6C942112BA0A0038234E /* kk-binary.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "kk-binary.cc"; sourceTree = "<group>"; };
+		1AFD6C952112BA0B0038234E /* kk-string.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "kk-string.cc"; sourceTree = "<group>"; };
+		1AFD6CA32112BA170038234E /* kk-wk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kk-wk.h"; sourceTree = "<group>"; };
+		1AFD6CA42112BA170038234E /* kk-dispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kk-dispatch.h"; sourceTree = "<group>"; };
+		1AFD6CA52112BA170038234E /* kk-ev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kk-ev.h"; sourceTree = "<group>"; };
+		1AFD6CA62112BA170038234E /* kk-crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kk-crypto.h"; sourceTree = "<group>"; };
+		1AFD6CA72112BA170038234E /* kk-chan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kk-chan.h"; sourceTree = "<group>"; };
+		1AFD6CA82112BA170038234E /* kk-script.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kk-script.h"; sourceTree = "<group>"; };
+		1AFD6CA92112BA170038234E /* kk-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kk-config.h"; sourceTree = "<group>"; };
+		1AFD6CAA2112BA170038234E /* kk-ws.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kk-ws.h"; sourceTree = "<group>"; };
+		1AFD6CAB2112BA170038234E /* kk-http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kk-http.h"; sourceTree = "<group>"; };
+		1AFD6CAC2112BA180038234E /* kk-block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kk-block.h"; sourceTree = "<group>"; };
+		1AFD6CAD2112BA180038234E /* kk-string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kk-string.h"; sourceTree = "<group>"; };
+		1AFD6CAE2112BA180038234E /* kk-object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kk-object.h"; sourceTree = "<group>"; };
+		1AFD6CAF2112BA180038234E /* kk-binary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kk-binary.h"; sourceTree = "<group>"; };
+		1AFD6CBD2112BA3E0038234E /* KKDuktape.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KKDuktape.xcodeproj; path = "../../kk-duktape/KKDuktape/KKDuktape.xcodeproj"; sourceTree = "<group>"; };
+		1AFD6CC42112BA470038234E /* KKEvent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KKEvent.xcodeproj; path = "../../kk-event/KKEvent/KKEvent.xcodeproj"; sourceTree = "<group>"; };
+		1AFD6CE32112C24F0038234E /* KKView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KKView.xcodeproj; path = ../../KKView/KKView/KKView.xcodeproj; sourceTree = "<group>"; };
+		1AFD6CEE2112C3190038234E /* KKSurfaceElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSurfaceElement.h; sourceTree = "<group>"; };
+		1AFD6CEF2112C3190038234E /* KKSurfaceElement.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KKSurfaceElement.mm; sourceTree = "<group>"; };
+		1AFD6CF22112C9190038234E /* KKSurfaceContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSurfaceContext.h; sourceTree = "<group>"; };
+		1AFD6CF32112C9190038234E /* KKSurfaceContext.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KKSurfaceContext.mm; sourceTree = "<group>"; };
+		1AFD6D012112DE570038234E /* KKSurfaceCGContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSurfaceCGContext.h; sourceTree = "<group>"; };
+		1AFD6D022112DE570038234E /* KKSurfaceCGContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSurfaceCGContext.m; sourceTree = "<group>"; };
+		1AFD6D052112E0B20038234E /* KKSurfaceGLContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSurfaceGLContext.h; sourceTree = "<group>"; };
+		1AFD6D062112E0B30038234E /* KKSurfaceGLContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSurfaceGLContext.m; sourceTree = "<group>"; };
+		1AFD6D092112E2810038234E /* KKSurfaceCanvasElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSurfaceCanvasElement.h; sourceTree = "<group>"; };
+		1AFD6D0A2112E2810038234E /* KKSurfaceCanvasElement.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KKSurfaceCanvasElement.mm; sourceTree = "<group>"; };
+		1AFD6D0E2112E6670038234E /* require_js.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = require_js.h; sourceTree = "<group>"; };
+		1AFD6D0F2112E6670038234E /* require.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = require.js; sourceTree = "<group>"; };
+		1AFD6D132112EF720038234E /* KKSurfaceGLElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSurfaceGLElement.h; sourceTree = "<group>"; };
+		1AFD6D142112EF720038234E /* KKSurfaceGLElement.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KKSurfaceGLElement.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AFD6C752112B6C80038234E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AFD6C6F2112B6C80038234E = {
+			isa = PBXGroup;
+			children = (
+				1AFD6CE32112C24F0038234E /* KKView.xcodeproj */,
+				1AFD6CC42112BA470038234E /* KKEvent.xcodeproj */,
+				1AFD6CBD2112BA3E0038234E /* KKDuktape.xcodeproj */,
+				1AFD6C7B2112B6C80038234E /* KKSurface */,
+				1AFD6C7A2112B6C80038234E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AFD6C7A2112B6C80038234E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AFD6C792112B6C80038234E /* KKSurface.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AFD6C7B2112B6C80038234E /* KKSurface */ = {
+			isa = PBXGroup;
+			children = (
+				1AFD6D0D2112E6670038234E /* js */,
+				1AFD6C882112B9840038234E /* include */,
+				1AFD6C842112B6D70038234E /* src */,
+				1AFD6C7C2112B6C80038234E /* KKSurface.h */,
+				1AFD6C7D2112B6C80038234E /* Info.plist */,
+				1AFD6CEE2112C3190038234E /* KKSurfaceElement.h */,
+				1AFD6CEF2112C3190038234E /* KKSurfaceElement.mm */,
+				1AFD6D092112E2810038234E /* KKSurfaceCanvasElement.h */,
+				1AFD6D0A2112E2810038234E /* KKSurfaceCanvasElement.mm */,
+				1AFD6D132112EF720038234E /* KKSurfaceGLElement.h */,
+				1AFD6D142112EF720038234E /* KKSurfaceGLElement.mm */,
+				1AFD6CF22112C9190038234E /* KKSurfaceContext.h */,
+				1AFD6CF32112C9190038234E /* KKSurfaceContext.mm */,
+				1AFD6D012112DE570038234E /* KKSurfaceCGContext.h */,
+				1AFD6D022112DE570038234E /* KKSurfaceCGContext.m */,
+				1AFD6D052112E0B20038234E /* KKSurfaceGLContext.h */,
+				1AFD6D062112E0B30038234E /* KKSurfaceGLContext.m */,
+			);
+			path = KKSurface;
+			sourceTree = "<group>";
+		};
+		1AFD6C842112B6D70038234E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1AFD6C8E2112BA090038234E /* kk-atomic-pthread.cc */,
+				1AFD6C942112BA0A0038234E /* kk-binary.cc */,
+				1AFD6C932112BA090038234E /* kk-block.cc */,
+				1AFD6C902112BA090038234E /* kk-chan.cc */,
+				1AFD6C8A2112BA080038234E /* kk-crypto.cc */,
+				1AFD6C912112BA090038234E /* kk-dispatch.cc */,
+				1AFD6C892112BA080038234E /* kk-ev.cc */,
+				1AFD6C8D2112BA080038234E /* kk-http.cc */,
+				1AFD6C922112BA090038234E /* kk-object.cc */,
+				1AFD6C8C2112BA080038234E /* kk-script.cc */,
+				1AFD6C952112BA0B0038234E /* kk-string.cc */,
+				1AFD6C8B2112BA080038234E /* kk-wk.cc */,
+				1AFD6C8F2112BA090038234E /* kk-ws.cc */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		1AFD6C882112B9840038234E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1AFD6CA92112BA170038234E /* kk-config.h */,
+				1AFD6CAE2112BA180038234E /* kk-object.h */,
+				1AFD6CAD2112BA180038234E /* kk-string.h */,
+				1AFD6CAF2112BA180038234E /* kk-binary.h */,
+				1AFD6CAC2112BA180038234E /* kk-block.h */,
+				1AFD6CA72112BA170038234E /* kk-chan.h */,
+				1AFD6CA62112BA170038234E /* kk-crypto.h */,
+				1AFD6CA42112BA170038234E /* kk-dispatch.h */,
+				1AFD6CA52112BA170038234E /* kk-ev.h */,
+				1AFD6CAB2112BA170038234E /* kk-http.h */,
+				1AFD6CA82112BA170038234E /* kk-script.h */,
+				1AFD6CA32112BA170038234E /* kk-wk.h */,
+				1AFD6CAA2112BA170038234E /* kk-ws.h */,
+			);
+			name = include;
+			path = ../../include;
+			sourceTree = "<group>";
+		};
+		1AFD6CBE2112BA3E0038234E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AFD6CC32112BA3E0038234E /* KKDuktape.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AFD6CC52112BA470038234E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AFD6CCA2112BA470038234E /* KKEvent.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AFD6CE42112C24F0038234E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AFD6CEB2112C24F0038234E /* KKView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AFD6D0D2112E6670038234E /* js */ = {
+			isa = PBXGroup;
+			children = (
+				1AFD6D0E2112E6670038234E /* require_js.h */,
+				1AFD6D0F2112E6670038234E /* require.js */,
+			);
+			name = js;
+			path = ../../js;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1AFD6C762112B6C80038234E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AFD6CB72112BA180038234E /* kk-ws.h in Headers */,
+				1AFD6D072112E0B30038234E /* KKSurfaceGLContext.h in Headers */,
+				1AFD6CB02112BA180038234E /* kk-wk.h in Headers */,
+				1AFD6D152112EF720038234E /* KKSurfaceGLElement.h in Headers */,
+				1AFD6CB82112BA180038234E /* kk-http.h in Headers */,
+				1AFD6CB12112BA180038234E /* kk-dispatch.h in Headers */,
+				1AFD6CB92112BA180038234E /* kk-block.h in Headers */,
+				1AFD6D032112DE570038234E /* KKSurfaceCGContext.h in Headers */,
+				1AFD6D102112E6670038234E /* require_js.h in Headers */,
+				1AFD6CB62112BA180038234E /* kk-config.h in Headers */,
+				1AFD6C7E2112B6C80038234E /* KKSurface.h in Headers */,
+				1AFD6CB32112BA180038234E /* kk-crypto.h in Headers */,
+				1AFD6CB42112BA180038234E /* kk-chan.h in Headers */,
+				1AFD6CF02112C3190038234E /* KKSurfaceElement.h in Headers */,
+				1AFD6CBC2112BA180038234E /* kk-binary.h in Headers */,
+				1AFD6D0B2112E2810038234E /* KKSurfaceCanvasElement.h in Headers */,
+				1AFD6CB22112BA180038234E /* kk-ev.h in Headers */,
+				1AFD6CF42112C9190038234E /* KKSurfaceContext.h in Headers */,
+				1AFD6CBB2112BA180038234E /* kk-object.h in Headers */,
+				1AFD6CB52112BA180038234E /* kk-script.h in Headers */,
+				1AFD6CBA2112BA180038234E /* kk-string.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1AFD6C782112B6C80038234E /* KKSurface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AFD6C812112B6C80038234E /* Build configuration list for PBXNativeTarget "KKSurface" */;
+			buildPhases = (
+				1AFD6C742112B6C80038234E /* Sources */,
+				1AFD6C752112B6C80038234E /* Frameworks */,
+				1AFD6C762112B6C80038234E /* Headers */,
+				1AFD6C772112B6C80038234E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AFD6CED2112C2570038234E /* PBXTargetDependency */,
+				1AFD6CCC2112BA770038234E /* PBXTargetDependency */,
+				1AFD6CCE2112BA770038234E /* PBXTargetDependency */,
+			);
+			name = KKSurface;
+			productName = KKSurface;
+			productReference = 1AFD6C792112B6C80038234E /* KKSurface.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AFD6C702112B6C80038234E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = kkmofang.cn;
+				TargetAttributes = {
+					1AFD6C782112B6C80038234E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					1AFD6CCF2112BC440038234E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 1AFD6C732112B6C80038234E /* Build configuration list for PBXProject "KKSurface" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1AFD6C6F2112B6C80038234E;
+			productRefGroup = 1AFD6C7A2112B6C80038234E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1AFD6CBE2112BA3E0038234E /* Products */;
+					ProjectRef = 1AFD6CBD2112BA3E0038234E /* KKDuktape.xcodeproj */;
+				},
+				{
+					ProductGroup = 1AFD6CC52112BA470038234E /* Products */;
+					ProjectRef = 1AFD6CC42112BA470038234E /* KKEvent.xcodeproj */;
+				},
+				{
+					ProductGroup = 1AFD6CE42112C24F0038234E /* Products */;
+					ProjectRef = 1AFD6CE32112C24F0038234E /* KKView.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1AFD6C782112B6C80038234E /* KKSurface */,
+				1AFD6CCF2112BC440038234E /* KKSurface.framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1AFD6CC32112BA3E0038234E /* KKDuktape.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KKDuktape.framework;
+			remoteRef = 1AFD6CC22112BA3E0038234E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AFD6CCA2112BA470038234E /* KKEvent.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KKEvent.framework;
+			remoteRef = 1AFD6CC92112BA470038234E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AFD6CEB2112C24F0038234E /* KKView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KKView.framework;
+			remoteRef = 1AFD6CEA2112C24F0038234E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AFD6C772112B6C80038234E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AFD6CD52112BC540038234E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nFMK_NAME=${PROJECT_NAME}\n\nINSTALL_DIR=${SRCROOT}/../${FMK_NAME}.framework\n\nWRK_DIR=build\n\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\n\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n\nif [ -d \"${INSTALL_DIR}\" ]\n\nthen\n\nrm -rf \"${INSTALL_DIR}\"\n\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\n\nopen \"${INSTALL_DIR}\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AFD6C742112B6C80038234E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AFD6C992112BA0B0038234E /* kk-script.cc in Sources */,
+				1AFD6C9B2112BA0B0038234E /* kk-atomic-pthread.cc in Sources */,
+				1AFD6C972112BA0B0038234E /* kk-crypto.cc in Sources */,
+				1AFD6C9D2112BA0B0038234E /* kk-chan.cc in Sources */,
+				1AFD6D082112E0B30038234E /* KKSurfaceGLContext.m in Sources */,
+				1AFD6CF52112C9190038234E /* KKSurfaceContext.mm in Sources */,
+				1AFD6C9F2112BA0B0038234E /* kk-object.cc in Sources */,
+				1AFD6C9A2112BA0B0038234E /* kk-http.cc in Sources */,
+				1AFD6C962112BA0B0038234E /* kk-ev.cc in Sources */,
+				1AFD6CA02112BA0B0038234E /* kk-block.cc in Sources */,
+				1AFD6D0C2112E2810038234E /* KKSurfaceCanvasElement.mm in Sources */,
+				1AFD6CF12112C3190038234E /* KKSurfaceElement.mm in Sources */,
+				1AFD6D162112EF720038234E /* KKSurfaceGLElement.mm in Sources */,
+				1AFD6CA12112BA0B0038234E /* kk-binary.cc in Sources */,
+				1AFD6C9E2112BA0B0038234E /* kk-dispatch.cc in Sources */,
+				1AFD6CA22112BA0B0038234E /* kk-string.cc in Sources */,
+				1AFD6D042112DE570038234E /* KKSurfaceCGContext.m in Sources */,
+				1AFD6C982112BA0B0038234E /* kk-wk.cc in Sources */,
+				1AFD6C9C2112BA0B0038234E /* kk-ws.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AFD6CCC2112BA770038234E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KKEvent;
+			targetProxy = 1AFD6CCB2112BA770038234E /* PBXContainerItemProxy */;
+		};
+		1AFD6CCE2112BA770038234E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KKDuktape;
+			targetProxy = 1AFD6CCD2112BA770038234E /* PBXContainerItemProxy */;
+		};
+		1AFD6CD42112BC530038234E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AFD6C782112B6C80038234E /* KKSurface */;
+			targetProxy = 1AFD6CD32112BC530038234E /* PBXContainerItemProxy */;
+		};
+		1AFD6CED2112C2570038234E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KKView;
+			targetProxy = 1AFD6CEC2112C2570038234E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1AFD6C7F2112B6C80038234E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1AFD6C802112B6C80038234E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1AFD6C822112B6C80038234E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8V7A9F9SCJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = ../lib;
+				INFOPLIST_FILE = KKSurface/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.kkmofang.KKSurface;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AFD6C832112B6C80038234E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8V7A9F9SCJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = ../lib;
+				INFOPLIST_FILE = KKSurface/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.kkmofang.KKSurface;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1AFD6CD12112BC440038234E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V7A9F9SCJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1AFD6CD22112BC440038234E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V7A9F9SCJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AFD6C732112B6C80038234E /* Build configuration list for PBXProject "KKSurface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AFD6C7F2112B6C80038234E /* Debug */,
+				1AFD6C802112B6C80038234E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AFD6C812112B6C80038234E /* Build configuration list for PBXNativeTarget "KKSurface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AFD6C822112B6C80038234E /* Debug */,
+				1AFD6C832112B6C80038234E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AFD6CD02112BC440038234E /* Build configuration list for PBXAggregateTarget "KKSurface.framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AFD6CD12112BC440038234E /* Debug */,
+				1AFD6CD22112BC440038234E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AFD6C702112B6C80038234E /* Project object */;
+}

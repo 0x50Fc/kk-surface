@@ -1,0 +1,6 @@
+framework module KKSurface {
+  umbrella header "KKSurface.h"
+
+  export *
+  module * { export * }
+}
